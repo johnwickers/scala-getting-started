@@ -18,8 +18,6 @@ object Application extends Controller {
     val m = Amount.valueOf("12 GeV").to(KILOGRAM)
     val testRelativity = s"E=mc^2: 12 GeV = $m"
     Ok(views.html.index(testRelativity))
-
-    Ok(views.html.index(null))
   }
 
   def db = Action {
